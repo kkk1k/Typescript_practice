@@ -9,7 +9,7 @@ let null1: null = null;
 // undefined 타입
 let unde1: undefined = undefined;
 
-let numA: number = null; // ❌
+// let numA: number = null; // ❌
 // 임시로 number에 null값을 부여하고 싶으면
 // tsconfig.json에 "strictNullChecks": false, 추가
 // strict 의 하위 옵션
