@@ -19,15 +19,15 @@ let user: User = {
 
 // 인덱스 시그니처
 
-type CountryNumberCodes = {
-  [key: string]: number;
-  Korea: number;
-};
-
 // type CountryNumberCodes = {
 //   [key: string]: number;
-//   Korea: string; // 오류!
+//   Korea: number;
 // };
+
+type CountryNumberCodes = {
+  [key: string]: number;
+  Korea: string; // 오류!
+};
 
 const codes1: CountryNumberCodes = {
   Korea: 82, // 반드시 포함

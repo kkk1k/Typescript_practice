@@ -22,6 +22,6 @@ let user2: {
   name: "이정환",
 };
 
-user.name = "dskfd"; // 오류 발생
+user2.name = "dskfd"; // 오류 발생
 
 console.log(user2);
