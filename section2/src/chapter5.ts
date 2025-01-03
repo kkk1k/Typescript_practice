@@ -17,6 +17,7 @@ type User = {
   role: number;
   language: string;
 };
+
 const user1: User = {
   name: "김한경",
   role: Role.ADMIN,
