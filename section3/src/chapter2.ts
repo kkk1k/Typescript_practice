@@ -48,5 +48,5 @@ function anyExam() {
   let anyVar: any;
   anyVar = unknownVar;
 
-  let neverVar: never = anyVar;
+  //   let neverVar: never = anyVar;
 }
