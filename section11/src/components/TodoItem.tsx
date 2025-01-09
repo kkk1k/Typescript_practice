@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Todo } from "../types";
+import { useTodoDispatch } from "../App";
 
 interface Props {
   props: Todo;
-  onClickDelete: (id: number) => void;
 }
 
-function TodoItem({ props, onClickDelete }: Props) {
+function TodoItem({ props }: Props) {
+  const dispatch = useTodoDispatch();
+
   const onClick = () => {
-    onClickDelete(props.id);
+    dispatch.onClickDelete(props.id);
   };
   return (
     <div>
