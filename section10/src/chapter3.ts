@@ -33,3 +33,8 @@ type ReturnA = ReturnType<typeof funcA>;
 
 type ReturnB = ReturnType<typeof funcB>;
 // number
+
+type Post = {
+  id: string;
+};
+
